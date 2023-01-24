@@ -1,10 +1,9 @@
-pipeline{
+Pipeline{
 agent any
-stages{
-stage("Git checkout"){
-steps{
-git 'https://github.com/AbdulAhadl/AssignmentProject.git'
+stage('git checkout')
+{
+git 'https://github.com/AbdulAhadl/jenkins-declarative.git'
 }
+
 }
-}
-}
+
